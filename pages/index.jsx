@@ -79,6 +79,7 @@ export default function Home() {
       <ReactFullPage
         navigation
         fadingEffect
+        scrollOverflow
         anchors={[
           'hero-section', 'about-section', 'about-section-2', 'skills-section', 'projects-section', 'contact-section'
         ]}
