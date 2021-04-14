@@ -1,0 +1,43 @@
+$grey-6: #bfbfbf;
+
+.timeline-block {
+    .timeline__dot {
+        position: relative;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #fff;
+        border: 2px solid #13c2c2;
+        z-index: 10;
+    }
+
+    .timeline__divider {
+        position: absolute;
+        width: 2px;
+        z-index: 1;
+        height: 100%;
+        left: auto;
+        right: auto;
+        background-color: $grey-6;
+    }
+
+    .timeline__content {
+        padding-bottom: 10px;
+    }
+
+    .timeline__label {
+        text-align: end;
+
+        &.label--is-all {
+            max-width: 100px;
+            width: 100%;
+        }
+    }
+
+    .timeline__line {
+        padding: 5px 0;
+        display: flex;
+        justify-content: center;
+    }
+}
+
