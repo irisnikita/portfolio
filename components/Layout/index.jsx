@@ -20,7 +20,7 @@ const defaultProps = {
 // Components
 function Layout(props) {
     // Props
-    const { tags } = props;
+    const { tags, children } = props;
     const [isPreload, setPreload] = useState(true)
 
     const currentSection = useSelector(selectCurrentSection)
@@ -91,6 +91,8 @@ function Layout(props) {
                     </a>
                 </div>
             </section>
+            
+            {children}
         </div>
     )
 }

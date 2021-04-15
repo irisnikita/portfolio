@@ -55,16 +55,16 @@ export default function Home() {
   })
   const [projects] = useState([
     {
-      key: 'project-1', label: 'Social web app', move: { origin: { x: "-100px", y: "0px" }, des: { x: "0px", y: "0px" } }, descripition: 'This is simple scocial web app for user register , login, can create, delete post, comment and like.', image: '/images/projects/Project-1.png', tech: 'ReactJs, Redux toolkit, NodeJs, GraphQl'
+      key: 'project-1', label: 'Social web app', move: { origin: { x: "-100px", y: "0px" }, des: { x: "0px", y: "0px" } }, descripition: 'This is simple scocial web app for user register , login, can create, delete post, comment and like.', image: 'images/projects/Project-1.png', tech: 'ReactJs, Redux toolkit, NodeJs, GraphQl'
     },
     {
-      key: 'project-2', label: 'Habimec', move: { origin: { x: "0px", y: "-100px" }, des: { x: "0px", y: "0px" } }, descripition: 'Landing page introduce company, the best medical products helping to improve the efficiency of community healthcare.', image: '/images/projects/Project-2.png', tech: 'ReactJs, Redux toolkit, NodeJs, GraphQl'
+      key: 'project-2', label: 'Habimec', move: { origin: { x: "0px", y: "-100px" }, des: { x: "0px", y: "0px" } }, descripition: 'Landing page introduce company, the best medical products helping to improve the efficiency of community healthcare.', image: 'images/projects/Project-2.png', tech: 'ReactJs, Redux toolkit, NodeJs, GraphQl'
     },
     {
-      key: 'project-3', label: 'Propzy tet', move: { origin: { x: "0px", y: "100px" }, des: { x: "0px", y: "0px" } }, descripition: 'Website for funy game ot tet holiday (li xi)', image: '/images/projects/Project-3.png', tech: 'ReactJs, Redux toolkit, NodeJs, GraphQl'
+      key: 'project-3', label: 'Propzy tet', move: { origin: { x: "0px", y: "100px" }, des: { x: "0px", y: "0px" } }, descripition: 'Website for funy game ot tet holiday (li xi)', image: 'images/projects/Project-3.png', tech: 'ReactJs, Redux toolkit, NodeJs, GraphQl'
     },
     {
-      key: 'project-4', label: 'Porofolio', move: { origin: { x: "100px", y: "0px" }, des: { x: "0px", y: "0px" } }, descripition: 'This is the website introduce myself, my skills, v.v', image: '/images/projects/Project-4.png', tech: 'ReactJs, Redux toolkit, NodeJs, GraphQl'
+      key: 'project-4', label: 'Porofolio', move: { origin: { x: "100px", y: "0px" }, des: { x: "0px", y: "0px" } }, descripition: 'This is the website introduce myself, my skills, v.v', image: 'images/projects/Project-4.png', tech: 'ReactJs, Redux toolkit, NodeJs, GraphQl'
     }
   ])
 
@@ -75,7 +75,7 @@ export default function Home() {
   // Render
   return (
     <div>
-      <Layout />
+      <Layout>
       <ReactFullPage
         navigation
         fadingEffect
@@ -224,7 +224,7 @@ export default function Home() {
                 </div>
               </section>
               <section className="skills-section section">
-                <div className="container">
+                <div className="container py-80">
                   <h2 className="sub-heading mx-auto">SKILLS</h2>
                   <h1 className="title mw-500 mx-auto text-center">
                     USING NOW
@@ -263,7 +263,7 @@ export default function Home() {
                 </div>
               </section>
               <section className="projects-section section">
-                <div className="container">
+                <div className="container py-80">
                   <h2 className="sub-heading mx-auto">PROJECTS</h2>
                   <h1 className="title mw-500 mx-auto text-center">
                     RECENTLY DONE PROJECT
@@ -293,7 +293,7 @@ export default function Home() {
                 </div>
               </section>
               <section className='contact-section section'>
-                <div className="container">
+                <div className="container py-80">
                   <Animation isScrollToShow>
 
                     <h2 className="sub-heading mx-auto">CONTACT</h2>
@@ -399,6 +399,7 @@ export default function Home() {
           );
         }}
       />
+      </Layout>
     </div>
   )
 }

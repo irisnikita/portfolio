@@ -32,13 +32,9 @@ function Animation(props) {
                 const draftMove = JSON.parse(JSON.stringify(props.move))
 
                 if (window && window.matchMedia('(max-width: 991px)').matches) {
-                    console.log('fsdjlj')
                     draftMove.origin.x = md.move && md.move.x ? md.move.x : "0px";
                     draftMove.origin.y = md.move && md.move.y ? md.move.y : "0px";
                 }
-
-                console.log(draftMove)
-
                 return draftMove;
             }
 
